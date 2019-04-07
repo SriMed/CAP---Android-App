@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PersonInfo">
+    tools:context=".MakeCampaign">
 
     <TextView
         android:id="@+id/textView2"
@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Personal Information"
+        android:text="Make a Campaign"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toTopOf="@+id/editCNameText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +49,9 @@
         android:ems="10"
         android:hint="@string/edit_email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editDescripText"
+        app:layout_constraintBottom_toTopOf="@+id/editCampName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editCNameText" />
 
@@ -60,29 +61,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="@string/edit_phone"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/editCategoryText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCEmailText" />
-
-    <EditText
-        android:id="@+id/editCategoryText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:hint="@string/edit_address"
-        android:inputType="textPostalAddress"
+        android:hint="@string/edit_description"
+        android:inputType="textImeMultiLine"
         app:layout_constraintBottom_toTopOf="@+id/editSloganText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDescripText" />
+        app:layout_constraintTop_toBottomOf="@+id/editCampName" />
 
     <EditText
         android:id="@+id/editSloganText"
@@ -90,28 +76,42 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="108dp"
         android:ems="10"
-        android:hint="@string/edit_password"
-        android:inputType="textPassword"
+        android:hint="@string/edit_slogan"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCategoryText" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/createCampB"
         style="@style/Buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:onClick="submitinfo"
-        android:text="Submit Personal Information"
+        android:onClick="createCamp"
+        android:text="Create Campaign"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editCampName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/editCampName"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editDescripText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCEmailText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

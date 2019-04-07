@@ -14,4 +14,9 @@ Our mobile app is called capConnect.
 </string>
     <string name="website">Visit this link for more information on our website:
     http://capconnectonline.org</string>
+    <string name="edit_description">Please enter a detailed description. This will be what potential volunteers will see when they view your campaign</string>
+    <string name="edit_category">Please enter a category for your campaign (eg. Environmental)</string>
+    <string name="edit_slogan">Please enter a slogan (eg. Nike - Just do it)</string>
+    <string name="editCampName">Catchy Name for your Campagin (Ex. Go Green!)</string>
+    <string name="FinishCamp">Congrats! You\'ve finished the process. Now users can view your campaign. Check and edit in \'My Campaigns\'</string>
 </resources>
