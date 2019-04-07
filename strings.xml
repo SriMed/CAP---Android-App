@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CAPConnect2.0</string>
+    <string name="Slogan">Taking the pain out of campaigns</string>
+    <string name="edit_name">Enter your full name</string>
+    <string name="edit_email">Enter your email please</string>
+    <string name="edit_address">48135 Cupcake Villa St. Herndon, Virginia</string>
+    <string name="edit_phone">(111)-111-1121</string>
+    <string name="edit_password">Please enter a secure, memorable password</string>
+    <string name="purpose">We are sophomores at TJHSST!
+Our mobile app is called capConnect.
+        We created this app using Android Studios, Elasticsearch and Flask.
+        The Phone2Action Legislator API was also used.
+        The main programming languages we used are Java and Python.
+</string>
+    <string name="website">Visit this link for more information on our website:
+    http://capconnectonline.org</string>
+</resources>
